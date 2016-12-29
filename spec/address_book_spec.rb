@@ -139,4 +139,16 @@ RSpec.describe AddressBook do
       book.import_from_csv("/Users/JupiterCody/bloc/address-bloc/models/entries.csv")
     end
   end
+
+  describe "#nuclear_delete" do
+    it "deletes all entries" do
+      book.add_entry('Ada Lovelace', '010.012.1815', 'augusta.king@lovelace.com')
+      book.add_entry('Ada Lovelace', '010.012.1815', 'augusta.king@lovelace.com')
+      book.add_entry('Ada Lovelace', '010.012.1815', 'augusta.king@lovelace.com')
+
+      book.nuclear_delete
+      expect(book.entries.size).to eq(0)
+
+    end
+  end
 end

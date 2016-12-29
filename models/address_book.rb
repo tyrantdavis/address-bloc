@@ -54,4 +54,8 @@ class AddressBook
     # #5
     return nil
   end
+
+  def nuclear_delete
+    @entries = []
+  end
 end
