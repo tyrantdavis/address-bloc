@@ -1,4 +1,4 @@
-# address-bloc
+# address-me
 ___
 An address book application that is a basic Ruby program executed from the command line.
 
@@ -20,4 +20,3 @@ ___
 * Ruby version 2.3.3
 ___
 
-_Made with my mentor at [Bloc](http://bloc.io)_
